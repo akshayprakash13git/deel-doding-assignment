@@ -107,3 +107,29 @@ Thank you and good luck! 🙏
 8. Added a common response handler (success/error) for uniform API responses
 9. Added module aliases for cleaner file imports
 10. Added env support using dotenv
+
+## Things I would have implemented, but ran out of time
+
+1. **GitHub Hooks for CI/CD**
+
+- Automated **ESLint checks** to enforce code quality.
+- **Prettier** for consistent code formatting.
+
+2. **Basic UI for API Interaction**
+
+- A simple front-end **enabler UI** for testing APIs.
+
+3. **Proper Authentication System**
+
+- Instead of passing `profile_id` in headers, I would have implemented:
+  - **JWT-based authentication** (login/logout flow).
+  - **Token management** with expiration & refresh mechanisms.
+
+4. **Granular Role-Based Access Control (RBAC)**
+
+- **Proper handling of admin login**.
+- **Restricting admin-only API access** based on user roles.
+
+5. **Better API Documentation**
+
+- **Swagger/OpenAPI** to document all APIs for easier integration.
