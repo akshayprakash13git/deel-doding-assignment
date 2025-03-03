@@ -94,3 +94,15 @@ For example, writing some unit tests or a simple frontend demonstrating calls to
 When you've finished the assignment, zip your repo (make sure to include the .git folder) and send us the zip file.
 
 Thank you and good luck! 🙏
+
+## Assignment creation changes
+
+1. Introduced typescript - Changed js files to ts
+2. Replaced getProfile.js by auth.middleware.ts
+3. Introduced controllers, routes, services for handling the apis
+4. Added validation using Joi
+5. Added cors security using cors package, xss attacks using helmet, rate limiting
+6. Added logger using Pino logger
+7. Added unit tests using jest. Run **npm run test** to run the unit tests.
+8. Added a common response handler (success/error) for uniform API responses
+9. Added module aliases for cleaner file imports

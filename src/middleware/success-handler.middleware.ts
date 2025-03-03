@@ -31,7 +31,7 @@ export const successHandler = (
   // Standardized API response format
   response.status(response.statusCode || 200).json({
     success: true,
-    message: responseData.message || "Success",
+    message: responseData.message || "",
     data: responseData.data || null,
   });
 };
