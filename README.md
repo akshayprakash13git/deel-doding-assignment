@@ -42,7 +42,7 @@ The exercise requires [Node.js](https://nodejs.org/en/) to be installed. We reco
 
 - The server is running with [nodemon](https://nodemon.io/), which will automatically restart whenever you modify and save a file.
 - The database provider is SQLite, which will store data in a file local to your repository called `database.sqlite3`. The ORM [Sequelize](http://docs.sequelizejs.com/) is used on top of it. You should interact with Sequelize. **Please spend some time reading the Sequelize documentation before starting the exercise.**
-- To authenticate users, use the `getProfile` middleware located under `src/middleware/getProfile.js`. Users are authenticated by passing `profile_id` in the request header. Once authenticated, the user's profile will be available under `req.profile`. Ensure that only users associated with a contract can access their respective contracts.
+- To authenticate users, use the `getProfile` middleware located under `src/middleware/getProfile.js`. Users are authenticated by passing `profile_id` in the request header. Once authenticated, the user's profile will be available under `request.profile`. Ensure that only users associated with a contract can access their respective contracts.
 - The server is running on port 3001.
 
 ## APIs to Implement
@@ -65,21 +65,21 @@ Below is a list of the required APIs for the application.
 
 ```json
 [
-    {
-        "id": 1,
-        "fullName": "Reece Moyer",
-        "paid" : 100.3
-    },
-    {
-        "id": 200,
-        "fullName": "Debora Martin",
-        "paid" : 99
-    },
-    {
-        "id": 22,
-        "fullName": "Debora Martin",
-        "paid" : 21
-    }
+  {
+    "id": 1,
+    "fullName": "Reece Moyer",
+    "paid": 100.3
+  },
+  {
+    "id": 200,
+    "fullName": "Debora Martin",
+    "paid": 99
+  },
+  {
+    "id": 22,
+    "fullName": "Debora Martin",
+    "paid": 21
+  }
 ]
 ```
 
