@@ -1,8 +1,8 @@
-import JobService from "../../services/job.service";
-import { AuthenticatedRequest } from "../../middleware/auth.middleware";
-import { ApiResponse } from "../../core/api-response";
-import TransactionService from "../../services/transaction.service";
-import logger from "../../utils/logger";
+import JobService from "@services/job.service";
+import { AuthenticatedRequest } from "@middleware/auth.middleware";
+import { ApiResponse } from "@core/api-response";
+import TransactionService from "@services/transaction.service";
+import logger from "@utils/logger";
 
 export class JobController {
   private transactionService: TransactionService;

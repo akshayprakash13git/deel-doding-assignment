@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
 import { Profile } from "../model";
-import { UnauthorizedError } from "../core/api-error";
-import logger from "../utils/logger";
+import { UnauthorizedError } from "@core/api-error";
+import logger from "@utils/logger";
 
 export interface AuthenticatedRequest extends Request {
   profile: Profile;

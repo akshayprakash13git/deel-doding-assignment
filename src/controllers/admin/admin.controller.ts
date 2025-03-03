@@ -1,8 +1,8 @@
 import { Request } from "express";
-import ProfileService from "../../services/profile.service";
-import { ApiResponse } from "../../core/api-response";
-import DateUtils from "../../utils/date-utils";
-import logger from "../../utils/logger";
+import ProfileService from "@services/profile.service";
+import { ApiResponse } from "@core/api-response";
+import DateUtils from "@utils/date-utils";
+import logger from "@utils/logger";
 
 export class AdminController {
   private profileService: ProfileService;
@@ -34,7 +34,6 @@ export class AdminController {
       startDate,
       endDate
     );
-    console.log("=-=--=-=-", profession);
     return {
       data: profession || {},
     };

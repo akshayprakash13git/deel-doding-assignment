@@ -1,18 +1,19 @@
 import express from "express";
 import bodyParser from "body-parser";
 import sequelize from "./database";
-import contractRoutes from "./controllers/contract/contract.route";
-import jobRoutes from "./controllers/job/job.route";
-import balanceRoutes from "./controllers/balance/balance.route";
-import adminRoutes from "./controllers/admin/admin.route";
-import { successHandler } from "./middleware/success-handler.middleware";
-import { errorHandler } from "./middleware/error-handler.middleware";
-import { authMiddleware } from "./middleware/auth.middleware";
+import contractRoutes from "@controllers/contract/contract.route";
+import jobRoutes from "@controllers/job/job.route";
+import balanceRoutes from "@controllers/balance/balance.route";
+import adminRoutes from "@controllers/admin/admin.route";
+import { successHandler } from "@middleware/success-handler.middleware";
+import { errorHandler } from "@middleware/error-handler.middleware";
+import { authMiddleware } from "@middleware/auth.middleware";
 import pinoHttp from "pino-http";
-import logger from "./utils/logger";
-import { adminAuthMiddleware } from "./middleware/admin-auth.middleware";
+import logger from "@utils/logger";
+import { adminAuthMiddleware } from "@middleware/admin-auth.middleware";
 import helmet from "helmet";
 import rateLimit from "express-rate-limit";
+import cors from "cors";
 
 const app = express();
 
@@ -93,6 +94,3 @@ app.use((request, response, next) => {
 });
 
 export default app;
-function cors(): any {
-  throw new Error("Function not implemented.");
-}

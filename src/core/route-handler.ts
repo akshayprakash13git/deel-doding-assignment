@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
 import { AuthenticatedRequest } from "../middleware/auth.middleware";
 import { ApiResponse } from "./api-response";
-import logger from "../utils/logger";
+import logger from "@utils/logger";
 
 /**
  * Middleware wrapper to handle async controller functions.

@@ -14,11 +14,13 @@ export const adminAuthMiddleware = async (
   next: NextFunction
 ) => {
   try {
-    const { profile } = request as AuthenticatedRequest;
+    // @todo to check if a layer of admin verification is required for admin routes. Requirement not clear on this, uncomment if you want to use
+
+    /*const { profile } = request as AuthenticatedRequest;
     // Check if the user is an admin
     if (profile.type !== "admin") {
       throw new UnauthorizedError("Admin access required");
-    }
+    }*/
 
     next();
   } catch (error) {

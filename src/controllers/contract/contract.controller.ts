@@ -1,8 +1,8 @@
-import { AuthenticatedRequest } from "../../middleware/auth.middleware";
-import { ContractService } from "../../services/contract.service";
-import { BadRequestError } from "../../core/api-error";
-import { ApiResponse } from "../../core/api-response";
-import logger from "../../utils/logger";
+import { AuthenticatedRequest } from "@middleware/auth.middleware";
+import { ContractService } from "@services/contract.service";
+import { BadRequestError } from "@core/api-error";
+import { ApiResponse } from "@core/api-response";
+import logger from "@utils/logger";
 
 export class ContractController {
   private contractService: ContractService;
