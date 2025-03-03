@@ -106,3 +106,4 @@ Thank you and good luck! 🙏
 7. Added unit tests using jest. Run **npm run test** to run the unit tests.
 8. Added a common response handler (success/error) for uniform API responses
 9. Added module aliases for cleaner file imports
+10. Added env support using dotenv
