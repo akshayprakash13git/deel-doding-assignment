@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
-import { ApiError } from "../core/api-error";
-import logger from "../utils/logger";
+import { ApiError } from "@core/api-error";
+import logger from "@utils/logger";
 
 /**
  * @middleware errorHandler

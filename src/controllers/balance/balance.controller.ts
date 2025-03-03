@@ -1,7 +1,7 @@
 import { Request } from "express";
-import TransactionService from "../../services/transaction.service";
-import { ApiResponse } from "../../core/api-response";
-import logger from "../../utils/logger";
+import TransactionService from "@services/transaction.service";
+import { ApiResponse } from "@core/api-response";
+import logger from "@utils/logger";
 
 export class BalanceController {
   private transactionService: TransactionService;

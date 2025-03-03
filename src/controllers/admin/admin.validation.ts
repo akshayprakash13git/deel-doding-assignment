@@ -1,5 +1,5 @@
 import Joi from "joi";
-import DateUtils from "../../utils/date-utils";
+import DateUtils from "@utils/date-utils";
 
 const datePattern = /^\d{2}-\d{2}-\d{4}$/;
 

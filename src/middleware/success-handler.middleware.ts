@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
-import { ApiResponse } from "../core/api-response";
-import logger from "../utils/logger";
+import { ApiResponse } from "@core/api-response";
+import logger from "@utils/logger";
 
 /**
  * @middleware successHandler
@@ -13,7 +13,7 @@ export const successHandler = (
   response: Response,
   next: NextFunction
 ): void => {
-  console.log("In success handler", response.locals);
+  logger.info("In success handler", response.locals);
   const responseData: ApiResponse<any> = response.locals.responseData;
 
   logger.debug({ response }, "Response from response.locals");

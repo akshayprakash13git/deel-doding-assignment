@@ -4,6 +4,13 @@
     "moduleResolution": "NodeNext",
     "target": "ESNext",
     "esModuleInterop": true,
-    "strict": true
+    "strict": true,
+    "paths": {
+      "@utils/*": ["./src/utils/*"],
+      "@core/*": ["./src/core/*"],
+      "@services/*": ["./src/services/*"],
+      "@middleware/*": ["./src/middleware/*"],
+      "@controllers/*": ["./src/controllers/*"]
+    }
   }
 }
